@@ -1,2 +1,2 @@
-# Sound-Colour
-VR Game
+# Sound & Colour
+VR Game 
