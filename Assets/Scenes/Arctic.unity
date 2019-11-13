@@ -1660,6 +1660,7 @@ MonoBehaviour:
   startBoundary: 5
   endBoundary: 10
   movementSpeed: 0.5
+  isActive: 1
 --- !u!4 &1290605086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012848826022, guid: 78af3a7aad589fa49b8fb946c9e57362,

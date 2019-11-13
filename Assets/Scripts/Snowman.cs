@@ -7,9 +7,9 @@ public class Snowman : MonoBehaviour
     public float startBoundary;
     public float endBoundary;
     public float movementSpeed;
+    public bool isActive;
 
     private float defaultPosition;
-    private bool isActive = true;
     private Vector3 positionStart;
     private Vector3 positionEnd;
 

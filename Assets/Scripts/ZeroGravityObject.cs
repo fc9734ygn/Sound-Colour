@@ -4,24 +4,42 @@ using UnityEngine;
 
 public class ZeroGravityObject : MonoBehaviour
 {
+    public bool shouldRotate;
+    public bool shouldFloat;
 
     private float floatingDefaultPositionY;
-    private readonly float floatingDeviationY = 0.5f;
-    private readonly float floatSpeed = 0.25f;
+
+    private float floatingDeviationY;
+    private float floatSpeed;
     private readonly float rotationSpeed = 1;
 
 
     private void Start()
     {
+        floatingDeviationY = Random.Range(0.5f, 1f);
+        floatSpeed = Random.Range(0.5f, 1f);
         floatingDefaultPositionY = transform.position.y - floatingDeviationY;
     }
 
     void FixedUpdate()
     {
-        ApplyZeroGravityEffect();
+        if (shouldFloat)
+        {
+            ApplyFloating();
+        }
+
+        if (shouldRotate)
+        {
+            ApplyRotation();
+        }
     }
 
-    private void ApplyZeroGravityEffect()
+    private void ApplyRotation()
+    {
+        transform.Rotate(0, rotationSpeed, 0);
+    }
+
+    private void ApplyFloating()
     {
         Vector3 vector = new Vector3(0, 0, 0);
 
@@ -35,7 +53,6 @@ public class ZeroGravityObject : MonoBehaviour
         }
 
         transform.GetComponent<Rigidbody>().AddForce(vector * floatSpeed);
-        transform.Rotate(rotationSpeed, rotationSpeed, rotationSpeed);
     }
 
     public void ToggleGravity()
