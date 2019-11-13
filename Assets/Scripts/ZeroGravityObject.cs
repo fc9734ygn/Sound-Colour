@@ -29,7 +29,7 @@ public class ZeroGravityObject : MonoBehaviour
         {
             vector = Vector3.up;
         }
-        else if (transform.position.y >= floatingDefaultPositionY)
+        else
         {
             vector = Vector3.down;
         }
