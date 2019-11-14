@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class LeverOff : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+
+    public AudioClip audioClip;
+    public GameObject scoreboard;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "leverTrigger")
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = audioClip;
+            audio.Play();
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.tag == "leverTrigger")
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = audioClip;
+            audio.Stop();
+        }
     }
 }
