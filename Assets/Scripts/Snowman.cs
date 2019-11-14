@@ -8,8 +8,8 @@ public class Snowman : MonoBehaviour
     public float endBoundary;
     public float movementSpeed;
     public bool isActive;
+    public AudioClip activationSound;
 
-    private float defaultPosition;
     private Vector3 positionStart;
     private Vector3 positionEnd;
 
@@ -17,7 +17,7 @@ public class Snowman : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        defaultPosition = transform.position.z;
+        Activate();
         positionStart = transform.position + new Vector3(0, 0, -startBoundary);
         positionEnd = transform.position + new Vector3(0, 0, endBoundary);
     }
@@ -39,5 +39,12 @@ public class Snowman : MonoBehaviour
     public void Activate()
     {
         isActive = true;
+        PlayActivationAudio();
+    }
+
+    private void PlayActivationAudio()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
     }
 }
