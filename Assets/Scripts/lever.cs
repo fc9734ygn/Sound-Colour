@@ -16,7 +16,6 @@ public class lever : MonoBehaviour
             audio.clip = audioClip;
             audio.Play();
 
-            scoreboard.GetComponent<textScript>().IncreaseScore();
         }
     }
 
