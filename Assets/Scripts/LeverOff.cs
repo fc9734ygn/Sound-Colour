@@ -6,9 +6,13 @@ public class LeverOff : MonoBehaviour
 {
 
 
-
+    public GameObject[] planets;
     public AudioClip audioClip;
-    public GameObject scoreboard;
+
+    private void Start()
+    {
+        planets = GameObject.FindGameObjectsWithTag("Planet");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +21,7 @@ public class LeverOff : MonoBehaviour
             AudioSource audio = GetComponent<AudioSource>();
             audio.clip = audioClip;
             audio.Play();
-
+            DisableGravity();
         }
     }
 
@@ -28,6 +32,20 @@ public class LeverOff : MonoBehaviour
             AudioSource audio = GetComponent<AudioSource>();
             audio.clip = audioClip;
             audio.Stop();
+        }
+    }
+
+    private void DisableGravity()
+    {
+        if (planets == null)
+        {
+
+            planets = GameObject.FindGameObjectsWithTag("Planet");
+        }
+
+        foreach (GameObject planet in planets)
+        {
+            planet.GetComponent<ZeroGravityObject>().ToggleFloating(true);
         }
     }
 }

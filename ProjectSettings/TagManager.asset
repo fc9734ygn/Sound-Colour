@@ -22,6 +22,12 @@ TagManager:
   - Fire
   - MacheteBlade
   - Machete
+  - Planet
+  - RoomSpace
+  - RoomJungle
+  - RoomMain
+  - RoomArctic
+  - RoomCoastal
   layers:
   - Default
   - TransparentFX
