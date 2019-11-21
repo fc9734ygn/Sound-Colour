@@ -19,6 +19,9 @@ TagManager:
   - Head
   - leverTrigger
   - leverBase
+  - Fire
+  - MacheteBlade
+  - Machete
   layers:
   - Default
   - TransparentFX
