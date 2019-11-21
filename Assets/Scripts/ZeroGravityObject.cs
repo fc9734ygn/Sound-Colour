@@ -8,7 +8,6 @@ public class ZeroGravityObject : MonoBehaviour
     public bool shouldFloat;
 
     private float floatingDefaultPositionY;
-
     private float floatingDeviationY;
     private float floatSpeed;
     private readonly float rotationSpeed = 1;
@@ -55,9 +54,10 @@ public class ZeroGravityObject : MonoBehaviour
         transform.GetComponent<Rigidbody>().AddForce(vector * floatSpeed);
     }
 
-    public void ToggleGravity()
+    public void ToggleFloating(bool shouldFloat)
     {
         bool isGravityOn = transform.GetComponent<Rigidbody>().useGravity;
-        transform.GetComponent<Rigidbody>().useGravity = true;
+        transform.GetComponent<Rigidbody>().useGravity = !shouldFloat;
+        shouldRotate = false;
     }
 }

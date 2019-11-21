@@ -39,6 +39,7 @@ public class Snowman : MonoBehaviour
     public void Activate()
     {
         isActive = true;
+        enabled = true;
         PlayActivationAudio();
     }
 
