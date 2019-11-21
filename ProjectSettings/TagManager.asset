@@ -21,6 +21,10 @@ TagManager:
   - leverBase
   - Planet
   - RoomSpace
+  - RoomJungle
+  - RoomMain
+  - RoomArctic
+  - RoomCoastal
   layers:
   - Default
   - TransparentFX
