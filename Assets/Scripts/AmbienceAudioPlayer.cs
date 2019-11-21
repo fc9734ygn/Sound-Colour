@@ -1,0 +1,53 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AmbienceAudioPlayer : MonoBehaviour
+{
+    public AudioClip mainClip;
+    public AudioClip jungleClip;
+    public AudioClip arcticClip;
+    public AudioClip coastalClip;
+    public AudioClip spaceClip;
+
+    private void PlayAmbienceAudio(AudioClip clip)
+    {
+        Debug.Log("audio should be playing");
+        AudioSource audio = this.GetComponentInParent<AudioSource>();
+        audio.clip = clip;
+        audio.Play();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
+            case "RoomSpace":
+                PlayAmbienceAudio(spaceClip);
+                break;
+            case "RoomJungle":
+                PlayAmbienceAudio(jungleClip);
+                break;
+            case "RoomArctic":
+                PlayAmbienceAudio(arcticClip);
+                break;
+            case "RoomCoastal":
+                PlayAmbienceAudio(coastalClip);
+                break;
+            case "RoomMain":
+                PlayAmbienceAudio(mainClip);
+                break;
+            default:
+                break;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        string tag = other.gameObject.tag;
+        if(tag == "RoomSpace" || tag == "RoomJungle" || tag == "RoomArctic" || tag == "RoomCoastal" || tag == "RoomMain")
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Stop();
+        }
+    }
+}

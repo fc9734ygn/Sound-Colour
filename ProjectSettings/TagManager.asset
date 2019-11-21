@@ -19,6 +19,7 @@ TagManager:
   - Head
   - leverTrigger
   - leverBase
+  - Planet
   layers:
   - Default
   - TransparentFX
