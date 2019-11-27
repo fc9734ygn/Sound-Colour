@@ -13,8 +13,9 @@ public class Snowman : MonoBehaviour
     private Vector3 positionStart;
     private Vector3 positionEnd;
 
+    public int healthPoints;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         Activate();
@@ -22,7 +23,6 @@ public class Snowman : MonoBehaviour
         positionEnd = transform.position + new Vector3(0, 0, endBoundary);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isActive)
@@ -47,5 +47,13 @@ public class Snowman : MonoBehaviour
     {
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "snowball")
+        {
+            healthPoints--;
+        }
     }
 }
