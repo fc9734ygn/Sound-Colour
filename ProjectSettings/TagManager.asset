@@ -28,6 +28,9 @@ TagManager:
   - RoomMain
   - RoomArctic
   - RoomCoastal
+  - Bottle
+  - BeachBall
+  - IceCream
   layers:
   - Default
   - TransparentFX
