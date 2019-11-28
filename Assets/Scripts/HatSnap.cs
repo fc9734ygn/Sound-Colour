@@ -9,8 +9,6 @@ public class HatSnap : MonoBehaviour
     public void OnSnap()
     {
         invisibleSnowman.GetComponent<Snowman>().Activate();
-
-        Debug.Log("Hat on");
     }
     
 }

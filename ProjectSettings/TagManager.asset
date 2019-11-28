@@ -29,6 +29,10 @@ TagManager:
   - RoomArctic
   - RoomCoastal
   - JungleReward
+  - Snowball
+  - Bottle
+  - BeachBall
+  - IceCream
   layers:
   - Default
   - TransparentFX
