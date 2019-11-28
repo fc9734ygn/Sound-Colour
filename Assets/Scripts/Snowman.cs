@@ -18,7 +18,7 @@ public class Snowman : MonoBehaviour
 
     void Start()
     {
-        Activate();
+   
         positionStart = transform.position + new Vector3(0, 0, -startBoundary);
         positionEnd = transform.position + new Vector3(0, 0, endBoundary);
     }
@@ -39,7 +39,7 @@ public class Snowman : MonoBehaviour
     public void Activate()
     {
         isActive = true;
-        enabled = true;
+        MakeVisible();
         PlayActivationAudio();
     }
 
@@ -51,9 +51,17 @@ public class Snowman : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "snowball")
+        if (collision.gameObject.tag == "Snowball")
         {
             healthPoints--;
+        }
+    }
+
+    private void MakeVisible()
+    {
+        foreach (Renderer r in this.gameObject.GetComponentsInChildren(typeof(Renderer)))
+        {
+            r.enabled = true;
         }
     }
 }
