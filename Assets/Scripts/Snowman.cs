@@ -9,16 +9,14 @@ public class Snowman : MonoBehaviour
     public float movementSpeed;
     public bool isActive;
     public AudioClip activationSound;
+    public AudioClip hitSound;
+    public int healthPoints;
 
     private Vector3 positionStart;
     private Vector3 positionEnd;
 
-    public int healthPoints;
-
-
     void Start()
     {
-   
         positionStart = transform.position + new Vector3(0, 0, -startBoundary);
         positionEnd = transform.position + new Vector3(0, 0, endBoundary);
     }
@@ -40,12 +38,13 @@ public class Snowman : MonoBehaviour
     {
         isActive = true;
         MakeVisible();
-        PlayActivationAudio();
+        PlayAudioClip(activationSound);
     }
 
-    private void PlayActivationAudio()
+    private void PlayAudioClip(AudioClip clip)
     {
         AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = clip;
         audio.Play();
     }
 
@@ -53,8 +52,24 @@ public class Snowman : MonoBehaviour
     {
         if (collision.gameObject.tag == "Snowball")
         {
-            healthPoints--;
+            ReceiveDamage();
         }
+    }
+
+    private void ReceiveDamage()
+    {
+        PlayAudioClip(hitSound);
+
+        healthPoints--;
+        if (healthPoints <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 
     private void MakeVisible()
