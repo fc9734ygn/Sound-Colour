@@ -13,15 +13,30 @@ public class SnowballInteractable : MonoBehaviour
         originalPosition = transform.position;
     }
 
-
     private void SpawnAnother()
     {
-        Instantiate(snowballPrefab, originalPosition, Quaternion.Euler(0,0,0));
+        Instantiate(snowballPrefab, originalPosition + new Vector3(0, 0.5f, 0), Quaternion.Euler(0, 0, 0));
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "snowballSpawn")
+        {
+            //TODO fix this
+             //  SpawnAnother();
+        }
     }
 
     public void OnThrow()
     {
         SpawnAnother();
-      //  Destroy(gameObject);
+        StartCoroutine(DespawnCoroutine());
+    }
+
+
+    IEnumerator DespawnCoroutine()
+    {
+        yield return new WaitForSeconds(60);
+        Destroy(gameObject);
     }
 }

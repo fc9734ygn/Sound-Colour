@@ -33,6 +33,7 @@ TagManager:
   - Bottle
   - BeachBall
   - IceCream
+  - snowballSpawn
   layers:
   - Default
   - TransparentFX

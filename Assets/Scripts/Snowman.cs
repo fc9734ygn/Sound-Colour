@@ -7,10 +7,12 @@ public class Snowman : MonoBehaviour
     public float startBoundary;
     public float endBoundary;
     public float movementSpeed;
-    public bool isActive;
+    private bool isActive;
     public AudioClip activationSound;
     public AudioClip hitSound;
     public int healthPoints;
+    public GameObject body;
+    public GameObject explosionPrefab;
 
     private Vector3 positionStart;
     private Vector3 positionEnd;
@@ -37,7 +39,7 @@ public class Snowman : MonoBehaviour
     public void Activate()
     {
         isActive = true;
-        MakeVisible();
+        body.SetActive(true);
         PlayAudioClip(activationSound);
     }
 
@@ -69,14 +71,8 @@ public class Snowman : MonoBehaviour
 
     private void Die()
     {
+        var explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        explosion.SetActive(true);
         Destroy(gameObject);
-    }
-
-    private void MakeVisible()
-    {
-        foreach (Renderer r in this.gameObject.GetComponentsInChildren(typeof(Renderer)))
-        {
-            r.enabled = true;
-        }
     }
 }
