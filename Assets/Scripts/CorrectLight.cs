@@ -5,6 +5,7 @@ using UnityEngine;
 public class CorrectLight : MonoBehaviour
 {
     public GameObject Light;
+    public GameObject Gas;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class CorrectLight : MonoBehaviour
     public void LightOn()
     {
         Light.active = true;
+        Gas.active = false;
     }
 
     // Update is called once per frame
