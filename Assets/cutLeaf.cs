@@ -10,6 +10,8 @@ public class cutLeaf : MonoBehaviour
     //Transform leafCut;
     //Transform leafWhole;
     GameObject  leafCut;
+    public AudioClip cutSound;
+
     public GameObject PrefabLeafCut;
     // Start is called before the first frame update
     void Start()
@@ -31,15 +33,22 @@ public class cutLeaf : MonoBehaviour
 
             leafCut = Instantiate(PrefabLeafCut, this.transform.position, this.transform.rotation);
             leafCut.transform.localScale = this.transform.localScale;
-           
+
             //leafCut = Instantiate(PrefabLeafCut, transform.position, Quaternion.identity) as Transform;
             //leafCut.parent = gameObject.transform;
             //leafCut.localRotation = leafCut.parent.rotation;
             //leafCut.localScale = new Vector3(1,1,1);
 
             //leafCut.localRotation = Quaternion.identity;
-
+            PlayCutSound();
             Destroy(this.gameObject);
         }
+    }
+
+    private void PlayCutSound()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = cutSound;
+        audio.Play();
     }
 }

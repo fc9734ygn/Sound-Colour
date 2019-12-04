@@ -60,4 +60,17 @@ public class ZeroGravityObject : MonoBehaviour
         transform.GetComponent<Rigidbody>().useGravity = !shouldFloat;
         shouldRotate = false;
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Floor")
+        {
+            PlayDropSound();
+        }
+    }
+
+    private void PlayDropSound()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+    }
 }
