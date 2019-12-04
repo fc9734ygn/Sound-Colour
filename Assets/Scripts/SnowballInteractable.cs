@@ -23,13 +23,13 @@ public class SnowballInteractable : MonoBehaviour
         if (other.tag == "snowballSpawn")
         {
             //TODO fix this
-             //  SpawnAnother();
+               SpawnAnother();
         }
     }
 
     public void OnThrow()
     {
-        SpawnAnother();
+       // SpawnAnother();
         StartCoroutine(DespawnCoroutine());
     }
 
