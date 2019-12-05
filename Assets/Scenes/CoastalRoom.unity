@@ -5570,55 +5570,6 @@ PrefabInstance:
       objectReference: {fileID: 1032239203}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
---- !u!1 &481791119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 6abb9cb91e11e9445a35f8d0f2ce229b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1883312697}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &481791120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481791119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e4d8e8b62d242a2b1a0fabc0bbe99c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dimension1: {fileID: 481791121}
-  dimension2: {fileID: 0}
-  renderQuality: 1
-  maximumDeformRange: 1
-  deformPower: 0.5
-  ignoreRigidbodyTag: 
-  alwaysVisibleMask:
-    serializedVersion: 2
-    m_Bits: 0
-  enableObliqueProjection: 0
-  Notes: 'Hover over each variable to get tooltips with more information on what they
-    do. Quick Tip: Don''t set the visible mask to Everything. Select each option you
-    want to be always visible.'
---- !u!114 &481791121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481791119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34fc569012251441a8fdc196d69ae63b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customSkybox: {fileID: 0}
-  layer: 0
-  initialWorld: 0
-  forceKeepInitialLayers: 0
-  connectedPortals: []
-  cam: {fileID: 0}
 --- !u!1 &533192666
 GameObject:
   m_ObjectHideFlags: 0

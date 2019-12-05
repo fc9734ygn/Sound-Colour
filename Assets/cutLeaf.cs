@@ -10,7 +10,6 @@ public class cutLeaf : MonoBehaviour
     //Transform leafCut;
     //Transform leafWhole;
     GameObject  leafCut;
-    public AudioClip cutSound;
 
     public GameObject PrefabLeafCut;
     // Start is called before the first frame update
@@ -47,8 +46,8 @@ public class cutLeaf : MonoBehaviour
 
     private void PlayCutSound()
     {
+        Debug.Log("Cutting leaf sound");
         AudioSource audio = GetComponent<AudioSource>();
-        audio.clip = cutSound;
         audio.Play();
     }
 }
