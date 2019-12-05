@@ -39,15 +39,10 @@ public class cutLeaf : MonoBehaviour
             //leafCut.localScale = new Vector3(1,1,1);
 
             //leafCut.localRotation = Quaternion.identity;
-            PlayCutSound();
+          
             Destroy(this.gameObject);
         }
     }
 
-    private void PlayCutSound()
-    {
-        Debug.Log("Cutting leaf sound");
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
-    }
+   
 }
