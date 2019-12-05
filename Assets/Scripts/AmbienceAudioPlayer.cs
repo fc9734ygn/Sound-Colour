@@ -10,9 +10,8 @@ public class AmbienceAudioPlayer : MonoBehaviour
     public AudioClip coastalClip;
     public AudioClip spaceClip;
 
-    private void PlayAmbienceAudio(AudioClip clip)
+    private void PlayNarationAudio(AudioClip clip)
     {
-        Debug.Log("audio should be playing");
         AudioSource audio = this.GetComponentInParent<AudioSource>();
         audio.clip = clip;
         audio.Play();
@@ -23,19 +22,19 @@ public class AmbienceAudioPlayer : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "RoomSpace":
-                PlayAmbienceAudio(spaceClip);
+                PlayNarationAudio(spaceClip);
                 break;
             case "RoomJungle":
-                PlayAmbienceAudio(jungleClip);
+                PlayNarationAudio(jungleClip);
                 break;
             case "RoomArctic":
-                PlayAmbienceAudio(arcticClip);
+                PlayNarationAudio(arcticClip);
                 break;
             case "RoomCoastal":
-                PlayAmbienceAudio(coastalClip);
+                PlayNarationAudio(coastalClip);
                 break;
             case "RoomMain":
-                PlayAmbienceAudio(mainClip);
+                PlayNarationAudio(mainClip);
                 break;
             default:
                 break;

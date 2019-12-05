@@ -838,14 +838,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6517911974375499090}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -939,11 +939,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f1cbfadd25364479cad3447bc5a2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainClip: {fileID: 8300000, guid: 9479cd5c55e098946a373eab8d6a2dc6, type: 3}
-  jungleClip: {fileID: 8300000, guid: f780be91632155f4f89902f996357d7f, type: 3}
-  arcticClip: {fileID: 8300000, guid: 85c69ca2d19339949a3386d22d3f8c99, type: 3}
-  coastalClip: {fileID: 8300000, guid: c043f832cb1617d4e9ce4c473839c383, type: 3}
-  spaceClip: {fileID: 8300000, guid: d065056c4392bc64e9d3df29bef41128, type: 3}
+  mainClip: {fileID: 8300000, guid: ecd036f81c3e0214d9f9ce4e79715359, type: 3}
+  jungleClip: {fileID: 8300000, guid: 658a42db7a4f355488ada5a8a8bf7784, type: 3}
+  arcticClip: {fileID: 8300000, guid: 8864c23f65d9c634689b56de5c78c586, type: 3}
+  coastalClip: {fileID: 8300000, guid: 12f59308cdab8b340a2ff5c49327159f, type: 3}
+  spaceClip: {fileID: 8300000, guid: 9865dc8b30136eb49866879047295fa9, type: 3}
 --- !u!1 &6517911974418063086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,14 +1150,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6518903189837112872}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1251,11 +1251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f1cbfadd25364479cad3447bc5a2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainClip: {fileID: 8300000, guid: 9479cd5c55e098946a373eab8d6a2dc6, type: 3}
-  jungleClip: {fileID: 8300000, guid: f780be91632155f4f89902f996357d7f, type: 3}
-  arcticClip: {fileID: 8300000, guid: 85c69ca2d19339949a3386d22d3f8c99, type: 3}
-  coastalClip: {fileID: 8300000, guid: c043f832cb1617d4e9ce4c473839c383, type: 3}
-  spaceClip: {fileID: 8300000, guid: d065056c4392bc64e9d3df29bef41128, type: 3}
+  mainClip: {fileID: 8300000, guid: ecd036f81c3e0214d9f9ce4e79715359, type: 3}
+  jungleClip: {fileID: 8300000, guid: 658a42db7a4f355488ada5a8a8bf7784, type: 3}
+  arcticClip: {fileID: 8300000, guid: 8864c23f65d9c634689b56de5c78c586, type: 3}
+  coastalClip: {fileID: 8300000, guid: 12f59308cdab8b340a2ff5c49327159f, type: 3}
+  spaceClip: {fileID: 8300000, guid: 9865dc8b30136eb49866879047295fa9, type: 3}
 --- !u!1001 &6517911973727422273
 PrefabInstance:
   m_ObjectHideFlags: 0
