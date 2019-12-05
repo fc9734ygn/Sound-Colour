@@ -13,6 +13,7 @@ public class Snowman : MonoBehaviour
     public int healthPoints;
     public GameObject body;
     public GameObject explosionPrefab;
+    public GameObject rewardBall;
 
     private Vector3 positionStart;
     private Vector3 positionEnd;
@@ -73,6 +74,7 @@ public class Snowman : MonoBehaviour
     {
         var explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         explosion.SetActive(true);
+        rewardBall.SetActive(true);
         Destroy(gameObject);
     }
 }
