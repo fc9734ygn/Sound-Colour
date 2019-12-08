@@ -5,10 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/test.unity
     guid: 20f96bc9d405eac4a8a7d19269de35ff
   - enabled: 1
     path: Assets/Scenes/CoastalRoom.unity
     guid: 6faf38d3bd6f8444091e61e2116c6777
+  - enabled: 1
+    path: Assets/Scenes/CentralRoom.unity
+    guid: 24709cc62c330eb438b08d47543c8ea3
+  - enabled: 1
+    path: Assets/Scenes/Arctic.unity
+    guid: a5bed12e0ba5e8046b1ccef941b0fd66
+  - enabled: 1
+    path: Assets/Scenes/Jungle.unity
+    guid: 4c2f13fc1c0551346bdead57c1302ef5
+  - enabled: 1
+    path: Assets/Scenes/Space.unity
+    guid: 33e3aeec2434163449e33cb5ded28313
   m_configObjects: {}

@@ -180,7 +180,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -208,4 +208,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75872afe5f5127c42b04fcc78976fef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snowballPrefab: {fileID: 7663357341655912393}
