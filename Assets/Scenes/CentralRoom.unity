@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17088664, g: 0.1657943, b: 0.16021709, a: 1}
+  m_IndirectSpecularColor: {r: 0.17091615, g: 0.16580315, b: 0.16026047, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4518,12 +4518,12 @@ PrefabInstance:
         type: 3}
       propertyPath: setups.Array.data[0]
       value: 
-      objectReference: {fileID: 629978261}
+      objectReference: {fileID: 1212248828}
     - target: {fileID: 1805041409229125713, guid: ae568279506a1c1419bae793c609bce7,
         type: 3}
       propertyPath: setups.Array.data[1]
       value: 
-      objectReference: {fileID: 1212248828}
+      objectReference: {fileID: 629978261}
     - target: {fileID: 6814696681386591390, guid: ae568279506a1c1419bae793c609bce7,
         type: 3}
       propertyPath: SpaceSkybox
@@ -6507,10 +6507,10 @@ MonoBehaviour:
   jungleStuff: {fileID: 1102322862}
   spaceStuff: {fileID: 1744736449}
   coastalStuff: {fileID: 806323099}
-  coastalLight: {fileID: 806323099}
-  articLight: {fileID: 1155374666}
-  jungleLight: {fileID: 1102322862}
-  spaceLight: {fileID: 1744736449}
+  coastalLight: {fileID: 1404682634}
+  articLight: {fileID: 536745992}
+  jungleLight: {fileID: 780129689}
+  spaceLight: {fileID: 135455143}
 --- !u!54 &4292036382974124242
 Rigidbody:
   m_ObjectHideFlags: 0
