@@ -28,23 +28,18 @@ public class AmbienceAudioPlayer : MonoBehaviour
         {
             case "RoomSpace":
                 PlayNarationAudio(spaceClip);
-                RenderSettings.skybox = SpaceSkybox;
 
                 break;
             case "RoomJungle":
                 PlayNarationAudio(jungleClip);
-                RenderSettings.skybox = JungleSkybox;
 
                 break;
             case "RoomArctic":
                 PlayNarationAudio(arcticClip);
-                RenderSettings.skybox = ArcticSkybox;
 
                 break;
             case "RoomCoastal":
                 PlayNarationAudio(coastalClip);
-                RenderSettings.skybox = CoastalSkybox;
-        RenderSettings.skybox = JungleSkybox;
 
                 break;
             case "RoomMain":
