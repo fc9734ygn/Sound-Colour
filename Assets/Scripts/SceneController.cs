@@ -42,7 +42,7 @@ public class SceneController : MonoBehaviour
         Destroy(GameObject.Find("MainRoom"));
         player.transform.position = new Vector3(10000, 1.5f, 0);
         SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Arctic"));
+        //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Arctic"));
         RenderSettings.skybox = ArcticSkybox;
 
     }
