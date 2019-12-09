@@ -24,7 +24,6 @@ public class SceneController : MonoBehaviour
 
         player.transform.position = new Vector3(0, 1.5f, 2000);
         SceneManager.LoadScene("CoastalRoom", LoadSceneMode.Additive);
-        Destroy(GameObject.Find("MainRoom"));
     }
 
     public void LoadJungleScene()
@@ -32,14 +31,11 @@ public class SceneController : MonoBehaviour
         RenderSettings.skybox = JungleSkybox;
         player.transform.position = new Vector3(2000, 1.5f, 2000);
         SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
-        Destroy(GameObject.Find("MainRoom"));
 
     }
 
     public void LoadArcticScene()
     {
-                    
-        Destroy(GameObject.Find("MainRoom"));
         player.transform.position = new Vector3(10000, 1.5f, 0);
         SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
         RenderSettings.skybox = ArcticSkybox;
@@ -51,14 +47,11 @@ public class SceneController : MonoBehaviour
         RenderSettings.skybox = SpaceSkybox;
         player.transform.position = new Vector3(5000, 1.5f, 5000);
         SceneManager.LoadScene("Space", LoadSceneMode.Additive);
-        Destroy(GameObject.Find("MainRoom"));
-
     }
 
     public void LoadMainScene()
     {
         player.transform.position = new Vector3(0, 0, 0);
-        SceneManager.LoadScene("CentralRoom", LoadSceneMode.Additive);
         Destroy(GameObject.Find("SpaceRoom"));
         Destroy(GameObject.Find("ArcticRoom"));
         Destroy(GameObject.Find("JungleRoom"));
