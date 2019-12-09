@@ -5,7 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    
+
+    GameObject player;
+    private void Start()
+    {
+        player = GameObject.Find("player new 1");
+        if (player != null)
+        {
+            DontDestroyOnLoad(player);
+        }
+    }
+
     public void LoadCoastalScene()
     {
         SceneManager.LoadScene("CoastalRoom");
@@ -28,8 +38,6 @@ public class SceneController : MonoBehaviour
 
     public void LoadMainScene()
     {
-        var rewardBall = GameObject.Find("RewardBall");
-        DontDestroyOnLoad(rewardBall);
         SceneManager.LoadScene("CentralRoom");
     }
 }

@@ -6,7 +6,6 @@ public class LeverOn : MonoBehaviour
 {
 
     public AudioClip audioClip;
-    public GameObject scoreboard;
     public GameObject[] planets;
 
     private void Start()
