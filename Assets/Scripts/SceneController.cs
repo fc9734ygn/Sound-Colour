@@ -13,7 +13,7 @@ public class SceneController : MonoBehaviour
         player = GameObject.Find("playerFinal");
         if (player != null)
         {
-            DontDestroyOnLoad(player);
+      //      DontDestroyOnLoad(player);
         }
 
     }
