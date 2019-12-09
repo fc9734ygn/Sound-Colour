@@ -10,6 +10,11 @@ public class CoastReward : MonoBehaviour
     public GameObject RewardBall;
     public GameObject InactiveRewardBall;
     public GameObject GlassJar;
+    public AudioClip CompleteSound;
+    public AudioClip GlassBreak;
+
+    private bool hasPlayed = false;
+
 
 
     // Start is called before the first frame update
@@ -27,8 +32,14 @@ public class CoastReward : MonoBehaviour
             RewardBall.GetComponent<MeshRenderer>().enabled = true;
             InactiveRewardBall.active = false;
             GlassJar.active = false;
-            
 
+            if (!hasPlayed)
+            {
+                //play sound
+                AudioSource.PlayClipAtPoint(GlassBreak, transform.position);
+                AudioSource.PlayClipAtPoint(CompleteSound, transform.position);
+                hasPlayed = true;
+            }
         }
 
     }
