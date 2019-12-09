@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5dd26a22952b5d448a530fb1743cca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JungleSkybox: {fileID: 2100000, guid: b4f152e0498484391a9f0d5a1facf03b, type: 2}
+  SpaceSkybox: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
+  ArcticSkybox: {fileID: 2100000, guid: f2b5f3f20933f434e850db1b710542fd, type: 2}
+  CoastalSkybox: {fileID: 2100000, guid: 8b7dd0809c7c6498789fa32a61eaa6cb, type: 2}
