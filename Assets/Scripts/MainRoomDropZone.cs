@@ -5,16 +5,21 @@ using VRTK;
 
 public class MainRoomDropZone : MonoBehaviour
 {
-
+    //Spawning deco in room once orb is dropped.
     public GameObject articStuff;
     public GameObject jungleStuff;
     public GameObject spaceStuff;
     public GameObject coastalStuff;
 
+    //Turning off lights once ball is dropped. 
     public GameObject coastalLight;
     public GameObject articLight;
     public GameObject jungleLight;
     public GameObject spaceLight;
+
+
+    //Level complete nosie 
+    public AudioClip BallDropped;
 
     public void OnRewardBallSnap()
     {
@@ -26,6 +31,7 @@ public class MainRoomDropZone : MonoBehaviour
             case RewardBall.Roomtype.Arctic:
                 articLight.SetActive(false);
                 articStuff.SetActive(true);
+                AudioSource.PlayClipAtPoint(BallDropped, transform.position);
                 snappedObject.transform.position = new Vector3(0, 0, 0);
                 break;
             case RewardBall.Roomtype.Coastal:
