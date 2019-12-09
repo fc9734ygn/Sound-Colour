@@ -37,7 +37,8 @@ public class CoastReward : MonoBehaviour
             {
                 //play sound
                 AudioSource.PlayClipAtPoint(GlassBreak, transform.position);
-                AudioSource.PlayClipAtPoint(CompleteSound, transform.position);
+                AudioSource.PlayClipAtPoint(CompleteSound, transform.position);
+
                 hasPlayed = true;
             }
         }

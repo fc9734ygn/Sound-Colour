@@ -29,7 +29,7 @@ public class SceneController : MonoBehaviour
     public void LoadJungleScene()
     {
         RenderSettings.skybox = JungleSkybox;
-        player.transform.position = new Vector3(2000, 1.5f, 2000);
+        player.transform.position = new Vector3(2002, 1.5f, 2002);
         SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
 
     }

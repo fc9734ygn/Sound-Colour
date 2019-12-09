@@ -37,14 +37,20 @@ public class MainRoomDropZone : MonoBehaviour
             case RewardBall.Roomtype.Coastal:
                 coastalLight.SetActive(false);
                 coastalStuff.SetActive(true);
+                AudioSource.PlayClipAtPoint(BallDropped, transform.position);
+
                 break;
             case RewardBall.Roomtype.Jungle:
                 jungleLight.SetActive(false);
                 jungleStuff.SetActive(true);
+                AudioSource.PlayClipAtPoint(BallDropped, transform.position);
+
                 break;
             case RewardBall.Roomtype.Space:
                 spaceLight.SetActive(false);
                 spaceStuff.SetActive(true);
+                AudioSource.PlayClipAtPoint(BallDropped, transform.position);
+
                 break;
             default:
                 break;
