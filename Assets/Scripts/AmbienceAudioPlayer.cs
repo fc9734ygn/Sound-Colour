@@ -15,6 +15,8 @@ public class AmbienceAudioPlayer : MonoBehaviour
     public Material ArcticSkybox;
     public Material CoastalSkybox;
 
+    private bool hasMainIntroBeenPlayed = false;
+
     private void PlayNarationAudio(AudioClip clip)
     {
         AudioSource audio = this.GetComponentInParent<AudioSource>();
@@ -28,22 +30,22 @@ public class AmbienceAudioPlayer : MonoBehaviour
         {
             case "RoomSpace":
                 PlayNarationAudio(spaceClip);
-
                 break;
             case "RoomJungle":
                 PlayNarationAudio(jungleClip);
-
                 break;
             case "RoomArctic":
                 PlayNarationAudio(arcticClip);
-
                 break;
             case "RoomCoastal":
                 PlayNarationAudio(coastalClip);
-
                 break;
             case "RoomMain":
-                PlayNarationAudio(mainClip);
+                if (!hasMainIntroBeenPlayed)
+                {
+                    PlayNarationAudio(mainClip);
+                }
+                hasMainIntroBeenPlayed = true;
                 break;
             default:
                 break;
