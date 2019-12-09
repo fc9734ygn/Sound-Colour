@@ -30,7 +30,7 @@ public class SceneController : MonoBehaviour
     public void LoadJungleScene()
     {
         RenderSettings.skybox = JungleSkybox;
-
+        player.transform.position = new Vector3(2000, 1.5f, 2000);
         SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
         Destroy(GameObject.Find("MainRoom"));
 
@@ -38,9 +38,7 @@ public class SceneController : MonoBehaviour
 
     public void LoadArcticScene()
     {
-                        
-       
-
+                    
         Destroy(GameObject.Find("MainRoom"));
         player.transform.position = new Vector3(10000, 1.5f, 0);
         SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
