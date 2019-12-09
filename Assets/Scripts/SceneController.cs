@@ -9,11 +9,13 @@ public class SceneController : MonoBehaviour
     GameObject player;
     private void Start()
     {
-        player = GameObject.Find("player new 1");
+      
+        player = GameObject.Find("playerFinal");
         if (player != null)
         {
-            DontDestroyOnLoad(player);
+      //      DontDestroyOnLoad(player);
         }
+
     }
 
     public void LoadCoastalScene()
