@@ -10,7 +10,7 @@ public class CoastReward : MonoBehaviour
     public GameObject RewardBall;
     public GameObject InactiveRewardBall;
     public GameObject GlassJar;
-    public AudioClip CompleteSound;
+
     public AudioClip GlassBreak;
 
     private bool hasPlayed = false;
@@ -37,7 +37,7 @@ public class CoastReward : MonoBehaviour
             {
                 //play sound
                 AudioSource.PlayClipAtPoint(GlassBreak, transform.position);
-                AudioSource.PlayClipAtPoint(CompleteSound, transform.position);
+               
 
                 hasPlayed = true;
             }

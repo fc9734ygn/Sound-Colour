@@ -18,6 +18,8 @@ public class CorrectLight : MonoBehaviour
     }
 
 
+
+
     public void LightOn()
     {
         Light.active = true;
