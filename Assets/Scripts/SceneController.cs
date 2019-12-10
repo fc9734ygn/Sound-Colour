@@ -13,6 +13,8 @@ public class SceneController : MonoBehaviour
     public Material ArcticSkybox;
     public Material CoastalSkybox;
 
+    private bool canTeleport = true;
+
     private void Start()
     {
         player = GameObject.Find("playerFinal");
@@ -20,41 +22,66 @@ public class SceneController : MonoBehaviour
 
     public void LoadCoastalScene()
     {
-        RenderSettings.skybox = CoastalSkybox;
+        if (canTeleport)
+        {
+            RenderSettings.skybox = CoastalSkybox;
+            SceneManager.LoadScene("CoastalRoom", LoadSceneMode.Additive);
+            player.transform.position = new Vector3(0, 1.5f, 2000);
+            StartCoroutine(TeleportCooldown());
+        }
 
-        player.transform.position = new Vector3(0, 1.5f, 2000);
-        SceneManager.LoadScene("CoastalRoom", LoadSceneMode.Additive);
     }
 
     public void LoadJungleScene()
     {
-        RenderSettings.skybox = JungleSkybox;
-        player.transform.position = new Vector3(2002, 1.5f, 2002);
-        SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
-
+        if (canTeleport)
+        {
+            RenderSettings.skybox = JungleSkybox;
+            SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
+            player.transform.position = new Vector3(2002, 1.5f, 2002);
+            StartCoroutine(TeleportCooldown());
+        }
     }
 
     public void LoadArcticScene()
     {
-        player.transform.position = new Vector3(10000, 1.5f, 0);
-        SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
-        RenderSettings.skybox = ArcticSkybox;
-
+        if (canTeleport)
+        {
+            RenderSettings.skybox = ArcticSkybox;
+            SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
+            player.transform.position = new Vector3(10000, 1.5f, 0);
+            StartCoroutine(TeleportCooldown());
+        }
     }
 
     public void LoadSpaceScene()
     {
-        RenderSettings.skybox = SpaceSkybox;
-        player.transform.position = new Vector3(5000, 1.5f, 5000);
-        SceneManager.LoadScene("Space", LoadSceneMode.Additive);
+        if (canTeleport)
+        {
+            RenderSettings.skybox = SpaceSkybox;
+            SceneManager.LoadScene("Space", LoadSceneMode.Additive);
+            player.transform.position = new Vector3(5000, 1.5f, 5000);
+            StartCoroutine(TeleportCooldown());
+        }
     }
 
     public void LoadMainScene()
     {
-        player.transform.position = new Vector3(0, 0, 0);
-        Destroy(GameObject.Find("SpaceRoom"));
-        Destroy(GameObject.Find("ArcticRoom"));
-        Destroy(GameObject.Find("JungleRoom"));
-        Destroy(GameObject.Find("CoastalRoom"));
+        if (canTeleport)
+        {
+            player.transform.position = new Vector3(0, 0, 0);
+            Destroy(GameObject.Find("SpaceRoom"));
+            Destroy(GameObject.Find("ArcticRoom"));
+            Destroy(GameObject.Find("JungleRoom"));
+            Destroy(GameObject.Find("CoastalRoom"));
+            StartCoroutine(TeleportCooldown());
+        }
+    }
+
+    IEnumerator TeleportCooldown()
+    {
+        canTeleport = false;
+        yield return new WaitForSeconds(3);
+        canTeleport = true;
     }
 }
