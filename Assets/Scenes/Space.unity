@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.015072746, g: 0.014138712, b: 0.015612399, a: 1}
+  m_IndirectSpecularColor: {r: 0.014788123, g: 0.014139786, b: 0.015305579, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -636,7 +636,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8490566, g: 0.1802243, b: 0.77853036, a: 0.32941177}
   usingState: 0
 --- !u!65 &166711005
 BoxCollider:
@@ -836,7 +836,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 0, b: 0.795773, a: 0.40392157}
   usingState: 0
 --- !u!65 &216788776
 BoxCollider:
@@ -1529,7 +1529,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8490566, g: 0.084104665, b: 0.77078545, a: 0.3019608}
   usingState: 0
 --- !u!65 &566296966
 BoxCollider:
@@ -2181,7 +2181,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8584906, g: 0.11743506, b: 0.7998115, a: 0.38431373}
   usingState: 0
 --- !u!65 &859347657
 BoxCollider:
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8396226, g: 0.20990565, b: 0.75999725, a: 0.3764706}
   usingState: 0
 --- !u!65 &905387252
 BoxCollider:
@@ -2605,7 +2605,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8018868, g: 0.15508187, b: 0.7480723, a: 0.32156864}
   usingState: 0
 --- !u!65 &912908887
 BoxCollider:
@@ -2639,7 +2639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69b37ddc71966a244a9ef11bf53a0f4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.519
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69b37ddc71966a244a9ef11bf53a0f4d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2742,7 +2742,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.9150943, g: 0.056114297, b: 0.80058175, a: 0.32156864}
   usingState: 0
 --- !u!114 &935732050
 MonoBehaviour:
@@ -3304,7 +3304,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8679245, g: 0.13510147, b: 0.76744837, a: 0.4}
   usingState: 0
 --- !u!65 &983697007
 BoxCollider:
@@ -10341,7 +10341,7 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 0.8531394, g: 0, b: 1, a: 0.3764706}
   usingState: 0
 --- !u!114 &1814727866
 MonoBehaviour:
@@ -11119,11 +11119,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 31.074757
       objectReference: {fileID: 0}
-    - target: {fileID: 1890216125338133814, guid: bd892dc3548d39d4aa306840421fb5d5,
-        type: 3}
-      propertyPath: roomtype
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1890216125338133772, guid: bd892dc3548d39d4aa306840421fb5d5,
         type: 3}
       propertyPath: m_IsKinematic
@@ -11148,6 +11143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.0000000016991373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890216125338133814, guid: bd892dc3548d39d4aa306840421fb5d5,
+        type: 3}
+      propertyPath: roomtype
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd892dc3548d39d4aa306840421fb5d5, type: 3}
