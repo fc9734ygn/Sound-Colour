@@ -18,12 +18,27 @@ public class SceneController : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("playerFinal");
+      
+       
+    }
+
+    private void EnableMusic()
+    {
+        AudioSource mainMusic = GameObject.Find("ambienceMusic").GetComponent<AudioSource>();
+        mainMusic.Play();
+    }
+
+    private void DisableMusic()
+    {
+        AudioSource mainMusic = GameObject.Find("ambienceMusic").GetComponent<AudioSource>();
+        mainMusic.Stop();
     }
 
     public void LoadCoastalScene()
     {
         if (canTeleport)
         {
+            DisableMusic();
             RenderSettings.skybox = CoastalSkybox;
             SceneManager.LoadScene("CoastalRoom", LoadSceneMode.Additive);
             player.transform.position = new Vector3(0, 1.5f, 2000);
@@ -36,6 +51,8 @@ public class SceneController : MonoBehaviour
     {
         if (canTeleport)
         {
+            DisableMusic();
+
             RenderSettings.skybox = JungleSkybox;
             SceneManager.LoadScene("Jungle", LoadSceneMode.Additive);
             player.transform.position = new Vector3(2002, 1.5f, 2002);
@@ -47,6 +64,8 @@ public class SceneController : MonoBehaviour
     {
         if (canTeleport)
         {
+            DisableMusic();
+
             RenderSettings.skybox = ArcticSkybox;
             SceneManager.LoadScene("Arctic", LoadSceneMode.Additive);
             player.transform.position = new Vector3(10000, 1.5f, 0);
@@ -58,6 +77,8 @@ public class SceneController : MonoBehaviour
     {
         if (canTeleport)
         {
+            DisableMusic();
+
             RenderSettings.skybox = SpaceSkybox;
             SceneManager.LoadScene("Space", LoadSceneMode.Additive);
             player.transform.position = new Vector3(5000, 1.5f, 5000);
@@ -69,6 +90,8 @@ public class SceneController : MonoBehaviour
     {
         if (canTeleport)
         {
+            EnableMusic();
+
             player.transform.position = new Vector3(0, 0, 0);
             Destroy(GameObject.Find("SpaceRoom"));
             Destroy(GameObject.Find("ArcticRoom"));
