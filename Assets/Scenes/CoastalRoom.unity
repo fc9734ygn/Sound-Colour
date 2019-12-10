@@ -7129,7 +7129,8 @@ MonoBehaviour:
   Light: {fileID: 327726950}
   Gas: {fileID: 1146864503}
   Correct: {fileID: 8300000, guid: f2915543bbff7094ca6802d2de4cad8d, type: 3}
-  incorrectSound: {fileID: 8300000, guid: 1bc2248a75f44df4ab42897fd1095c3d, type: 3}
+  incorrectSound: {fileID: 8300000, guid: ecba1d954e900ca41a1d67e8267dde31, type: 3}
+  gasleakSound: {fileID: 0}
 --- !u!82 &1032239206
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7362,7 +7363,8 @@ MonoBehaviour:
   Light: {fileID: 1955901078}
   Gas: {fileID: 252619715}
   Correct: {fileID: 8300000, guid: f2915543bbff7094ca6802d2de4cad8d, type: 3}
-  incorrectSound: {fileID: 8300000, guid: 1bc2248a75f44df4ab42897fd1095c3d, type: 3}
+  incorrectSound: {fileID: 8300000, guid: ecba1d954e900ca41a1d67e8267dde31, type: 3}
+  gasleakSound: {fileID: 0}
 --- !u!114 &1066689569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12779,7 +12781,8 @@ MonoBehaviour:
   Light: {fileID: 2027043358}
   Gas: {fileID: 1770753122}
   Correct: {fileID: 8300000, guid: f2915543bbff7094ca6802d2de4cad8d, type: 3}
-  incorrectSound: {fileID: 8300000, guid: 1bc2248a75f44df4ab42897fd1095c3d, type: 3}
+  incorrectSound: {fileID: 8300000, guid: ecba1d954e900ca41a1d67e8267dde31, type: 3}
+  gasleakSound: {fileID: 0}
 --- !u!82 &1386231525
 AudioSource:
   m_ObjectHideFlags: 0
