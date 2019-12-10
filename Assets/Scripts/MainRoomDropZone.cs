@@ -32,7 +32,7 @@ public class MainRoomDropZone : MonoBehaviour
                 articLight.SetActive(false);
                 articStuff.SetActive(true);
                 AudioSource.PlayClipAtPoint(BallDropped, transform.position);
-                snappedObject.transform.position = new Vector3(0, 0, 0);
+                
                 break;
             case RewardBall.Roomtype.Coastal:
                 coastalLight.SetActive(false);

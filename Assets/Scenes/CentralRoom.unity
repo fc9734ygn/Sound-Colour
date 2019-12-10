@@ -2862,7 +2862,7 @@ PrefabInstance:
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
       propertyPath: validHighlightColor.a
-      value: 1
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -2883,6 +2883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: highlightColor.b
       value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
+        type: 3}
+      propertyPath: highlightColor.a
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 21994577172644716, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -5997,7 +6002,7 @@ PrefabInstance:
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
       propertyPath: validHighlightColor.a
-      value: 0.98039216
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -6013,6 +6018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: highlightColor.b
       value: 0.84313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
+        type: 3}
+      propertyPath: highlightColor.a
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 21994577172644716, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -6470,7 +6480,7 @@ PrefabInstance:
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
       propertyPath: validHighlightColor.a
-      value: 1
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -6486,6 +6496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: highlightColor.b
       value: 0.9882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
+        type: 3}
+      propertyPath: highlightColor.a
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 21994577172644716, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -7101,7 +7116,7 @@ PrefabInstance:
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
       propertyPath: highlightColor.a
-      value: 1
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
@@ -7122,6 +7137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: validHighlightColor.b
       value: 0.07058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248189102933675908, guid: a25dae6ea83862f49955cfa2812a857b,
+        type: 3}
+      propertyPath: validHighlightColor.a
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 21994577172644716, guid: a25dae6ea83862f49955cfa2812a857b,
         type: 3}
