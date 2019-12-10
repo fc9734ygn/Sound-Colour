@@ -32,15 +32,6 @@ public class CorrectLight : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-     
-        bool isCorrect = VRTK_PolicyList.Check(other.gameObject, policyList);
-        if (!isCorrect)
-        {
-            GasLeak.PlayOneShot(incorrectSound);
-        }
-    }
 
     // Update is called once per frame
     void Update()
