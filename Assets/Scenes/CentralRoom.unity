@@ -2215,10 +2215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6f44780b2b31046b42238dbb4aec86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light0: {fileID: 0}
-  light1: {fileID: 0}
-  light2: {fileID: 0}
-  light3: {fileID: 0}
+  light0: {fileID: 806323099}
+  light1: {fileID: 1155374666}
+  light2: {fileID: 1102322862}
+  light3: {fileID: 1744736449}
 --- !u!82 &910349607
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2229,7 +2229,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ff0db228e4bffb44ebcc80fa2f76d22d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2275,7 +2275,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
