@@ -11,7 +11,7 @@ public class CorrectLight : MonoBehaviour
     AudioSource GasLeak;
     VRTK_PolicyList policyList;
     public AudioClip incorrectSound;
-    public AudioClip gasleakSound;
+
 
     // Start is called before the first frame update
     void Start()
